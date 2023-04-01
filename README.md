@@ -1,4 +1,4 @@
-# vite-project
+## vite + React + TypeScript - project
 npm create vite@latest
 
 cd vite-project
