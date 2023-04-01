@@ -37,7 +37,10 @@ The setup
 
 Backend setup
 npm init -y
-npm install express cors mangoose dotenv
+npm install express cors mongoose dotenv
 * cors stands for - "cross origin resource sharing;
 npm i nodemon
 npm start
+
+* install MySQL2
+npm install --save mysql2
