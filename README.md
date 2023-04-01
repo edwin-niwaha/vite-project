@@ -44,6 +44,8 @@ The setup
     'airbnb-typescript'
   - npm i -D prettier eslint-config-prettier eslint-plugin-prettier
   
+  Front end bootstrap
+  -npm install react-bootstrap bootstrap
 
 * vitest, jsdom, @testing-library
 * react-router
