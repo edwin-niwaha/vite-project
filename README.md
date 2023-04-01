@@ -32,6 +32,19 @@ Create test folder - add setup.ts file
 
 The setup
 * eslint, eslint-airbnb-config, prettier
+  -npm i -D eslint
+  -npx eslint --init
+  -npx install-peerdeps --dev eslint-config-airbnb
+  -add the folowing in exlintrc.cjs with after extends
+        "airbnb",
+        "airbnb/hooks",
+  -install plugin eslint-config-airbnb-typescript
+  npm i -D eslint-config-airbnb-typescript
+  - add after extends
+    'airbnb-typescript'
+  - npm i -D prettier eslint-config-prettier eslint-plugin-prettier
+  
+
 * vitest, jsdom, @testing-library
 * react-router
 
