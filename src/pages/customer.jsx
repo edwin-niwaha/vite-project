@@ -1,12 +1,7 @@
 import React, { Component } from "react";
+import "../components/style.css";
 // import axios from "axios";
-const customStyle = {
-  width: "100%",
-  margin: "0 auto",
-  padding: "10px",
-  align: "centre",
-};
-class addCustomer extends Component {
+class Customer extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -59,63 +54,65 @@ class addCustomer extends Component {
 
   render() {
     return (
-      <form style={customStyle}>
+      <div className="wrapper">
+      <div className="form-wrapper">
+      <form>
         <div className="form-group">
-          <h3>Customer Reg.</h3>
+          <h3>+ Customer</h3>
+          </div>
+          <div className="textboxfrm">
           <label>
             {" "}
             Name
             <input
               name="customerName"
-              required
               type="text"
-              className="form-control"
+              className="textboxfrm"
               value={this.state.customerName}
               onChange={this.handleCustomerNameChange}
             />
           </label>
         </div>
-        <div className="form-group">
+        <div className="textboxfrm">
           <label>
             {" "}
             Gender{" "}
             <input
               name="customerGender"
-              required
               type="text"
-              className="form-control"
+              className="textboxfrm"
               value={this.state.customerGender}
               onChange={this.handleCustomerGenderChange}
             />{" "}
           </label>
         </div>
-        <div className="form-group">
+        <div className="textboxfrm">
           <label>
             {" "}
             Amount{" "}
             <input
               name="Amount"
               type="text"
-              className="form-control"
+              className="textboxfrm"
               value={this.state.Amount}
               onChange={this.handleCustomerAmountChange}
             />{" "}
           </label>
         </div>
-        <div className="form-group">
+        <div className="textboxfrm">
           <label>
             {" "}
             LoanTenure
             <input
               name="LoanTenure"
               type="text"
-              className="form-control"
+              className="textboxfrm"
               value={this.state.LoanTenure}
               onChange={this.handleCustomerLoanTenureChange}
             />{" "}
           </label>
         </div>
-        <div className="form-group">
+        <div className="textboxfrm">
           <button
             type="button"
             className="btn btn-primary"
@@ -125,8 +122,10 @@ class addCustomer extends Component {
           </button>
         </div>
       </form>
+      </div>
+      </div>
     );
   }
 }
 
-export default addCustomer;
+export default Customer;

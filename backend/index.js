@@ -2,8 +2,9 @@ import express from "express";
 import * as dotenv from "dotenv";
 import mongoose from "mongoose";
 import cors from "cors";
-// import exercisesRouter from "./routes/exercises.js";
-// import userRouter from "./routes/users.js";
+
+// import  routes
+import contactRouter from "./routes/contact.js";
 import customerRouter from "./routes/customers.js";
 
 dotenv.config();
@@ -21,8 +22,7 @@ await mongoose
   .catch((error) => console.error("MongoDB connection failed:", error.message));
 
 // use routes
-// app.use("/exercises", exercisesRouter);
-// app.use("/users", userRouter);
+app.use("/contact", contactRouter);
 app.use("/customers", customerRouter);
 
 app.listen(port, () => {

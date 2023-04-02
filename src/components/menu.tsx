@@ -4,8 +4,9 @@ import { Link } from "react-router-dom";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "../App.css";
 
-export default function Menu() {
+function Menu() {
   return (
     <Navbar
       id="RouterNavLink"
@@ -16,7 +17,9 @@ export default function Menu() {
       className="p-3"
     >
       <Container>
-        <Navbar.Brand href="#home">Loan Manager</Navbar.Brand>
+        <img id="logoln" src="/svg.jpg" />
+        &nbsp;&nbsp;
+        <Navbar.Brand href="#home">LOAN MANAGER</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
@@ -52,7 +55,7 @@ export default function Menu() {
             <Nav.Link
               eventKey={2}
               className="btn btn-light text-black"
-              href="#"
+              href="/signup"
             >
               Sign up
             </Nav.Link>
@@ -62,3 +65,4 @@ export default function Menu() {
     </Navbar>
   );
 }
+export default Menu;
